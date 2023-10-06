@@ -1,12 +1,6 @@
 .animate-character {
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #ff5137 0%,
-    #ff3737 29%,
-    #e93338 67%,
-    #e93338 100%
-  );
+  background-image: linear-gradient(-225deg, #ff5137 0%, #ff3737 29%, #e93338 67%, #e93338 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -23,3 +17,37 @@
     background-position: -200% center;
   }
 }
+
+/* 
+.obs-hidden>div#card-servicos {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-80%);
+  transition: all 1s;
+}
+
+.obs-show>div#card-servicos {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+}
+
+.obs-hidden>div#titulo {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(120%);
+  transition: all 1s;
+}
+
+.obs-show>div#titulo {
+  opacity: 1;
+  overflow-x: hidden;
+  filter: blur(0px);
+  transform: translateX(0%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .obs-hidden {
+    transition: none;
+  }
+} */
