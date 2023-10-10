@@ -12,10 +12,9 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos
 }
 
+const buttonOpen = document.getElementById("hamburger-open")
+const buttonClose = document.getElementById("hamburger-close")
 function toggleNavbar() {
-  const buttonOpen = document.getElementById("hamburger-open")
-  const buttonClose = document.getElementById("hamburger-close")
-
   if (buttonOpen.classList.contains("hidden")) {
     buttonOpen.classList.remove("hidden")
     buttonClose.classList.add("hidden")
@@ -35,8 +34,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
+const menuBtn = document.querySelector("#navbar-toggle")
 document.addEventListener("click", function (e) {
-  const menuBtn = document.querySelector("#navbar-toggle")
   if (
     (!e.target.closest("nav") && menuBtn.getAttribute("aria-expanded") == "true") ||
     (e.target.classList.contains("nav-link") && menuBtn.getAttribute("aria-expanded") == "true")

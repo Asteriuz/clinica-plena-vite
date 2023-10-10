@@ -12,24 +12,24 @@ const testimonyList = {
     name: "Laura Kim (Local Guide)",
     testimony:
       "Melhor Doutora ginecologista da vida! Amorosa, super profissional, dedicada, entende do riscado, consulta de 1 hora, só posso recomendar a todas! Gratidão!",
-    img: "/src/assets/img/testimony/person1.png",
+    img: "testimony/person1.png",
   },
   1: {
     name: "Vanildes Bernardo",
     testimony:
       "Melhor Dra Angélica, melhor Dra  que já encontrei, muito atenciosa , e muito simpática, amiga , enfim uma fofaaaa Dr Orlando que é vascular tbm, um  excelente médico , muito profissional e bem humorado tbm !!! Esses dois são maravilhosos, tenho um carinho e admiração pelos 2 ❤️❤️",
-    img: "/src/assets/img/testimony/person2.png",
+    img: "testimony/person2.png",
   },
   2: {
     name: "Marcela Camargo",
     testimony:
       "Gostaria de expressar minha eterna gratidão a profissional Dra. Angelica Barcelos ,  otima profissional soube diagnosticar com rapidez e tomar as decisões rapidamente diante da minha situação. Recomendo a todos da minha familia, amigos e a quem eu puder falar.   Dra. Angelica obrigada por tudo!",
-    img: "src/assets/img/testimony/person3.png",
+    img: "testimony/person3.png",
   },
   3: {
     name: "Rosa Maria (Local Guide)",
     testimony: "Educada, delicada e bem humorada😍 ...",
-    img: "src/assets/img/testimony/person4.png",
+    img: "testimony/person4.png",
   },
 }
 
@@ -63,3 +63,14 @@ const prevTestimony = () => {
 
 nextButton.addEventListener("click", nextTestimony)
 prevButton.addEventListener("click", prevTestimony)
+
+// add event listener to change testimony with arrow keys if testimony is visible in viewport
+document.addEventListener("keydown", (e) => {
+  if (testimonyContainer.getBoundingClientRect().top < window.innerHeight && testimonyContainer.getBoundingClientRect().bottom > 0) {
+    if (e.key == "ArrowRight") {
+      nextTestimony()
+    } else if (e.key == "ArrowLeft") {
+      prevTestimony()
+    }
+  }
+})
