@@ -36,6 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const menuBtn = document.querySelector("#navbar-toggle")
 document.addEventListener("click", function (e) {
+  if (!e.isTrusted) return
   if (
     (!e.target.closest("nav") && menuBtn.getAttribute("aria-expanded") == "true") ||
     (e.target.classList.contains("nav-link") && menuBtn.getAttribute("aria-expanded") == "true")
@@ -52,8 +53,10 @@ const mybutton = document.getElementById("btn-back-to-top")
 const scrollFunction = () => {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     mybutton.classList.remove("opacity-0")
+    mybutton.classList.remove("invisible")
   } else {
     mybutton.classList.add("opacity-0")
+    mybutton.classList.add("invisible")
   }
 }
 const backToTop = () => {
@@ -64,3 +67,38 @@ const backToTop = () => {
 mybutton.addEventListener("click", backToTop)
 
 window.addEventListener("scroll", scrollFunction)
+
+// change active depending on scroll position
+const sections = document.querySelectorAll("section")
+const navLi = document.querySelectorAll(".nav-link")
+
+window.addEventListener("scroll", () => {
+  let current = ""
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.clientHeight
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id")
+    }
+  })
+  if (pageYOffset < 800) {
+    current = "home"
+  }
+  console.log(current)
+
+  navLi.forEach((li) => {
+    li.classList.remove("lg:text-vermelho-claro")
+    li.classList.remove("text-white")
+    li.classList.remove("bg-vermelho-claro")
+    li.classList.add("lg:text-cinza-escuro")
+    li.classList.add("lg:bg-transparent")
+    li.classList.add("text-cinza-escuro")
+    if (li.classList.contains(current)) {
+      li.classList.remove("text-cinza-escuro")
+      li.classList.remove("lg:text-cinza-escuro")
+      li.classList.add("bg-vermelho-claro")
+      li.classList.add("text-white")
+      li.classList.add("lg:text-vermelho-claro")
+    }
+  })
+})

@@ -14,26 +14,6 @@ function resetSlideInterval() {
   }, 4000) // Adjust the interval as needed (e.g., 5000ms for a 5-second interval)
 }
 
-function handleSlideButtonClick(event) {
-  if (!canSlide) {
-    return
-  }
-  clearInterval(slideInterval)
-  canSlide = false
-
-  // Determine which button was clicked
-  const clickedButton = event.target === nextButton ? nextButton : prevButton
-  clickedButton.click()
-
-  setTimeout(() => {
-    canSlide = true
-    resetSlideInterval()
-  }, 700)
-}
-
-nextButton.addEventListener("click", handleSlideButtonClick)
-prevButton.addEventListener("click", handleSlideButtonClick)
-
 document.addEventListener("keydown", function (event) {
   if (heroContainer.getBoundingClientRect().top < window.innerHeight && heroContainer.getBoundingClientRect().bottom > 0) {
     if (!canSlide) {
@@ -51,6 +31,9 @@ document.addEventListener("keydown", function (event) {
     }, 700)
   }
 })
+
+prevButton.addEventListener("click", resetSlideInterval)
+nextButton.addEventListener("click", resetSlideInterval)
 
 resetSlideInterval()
 
