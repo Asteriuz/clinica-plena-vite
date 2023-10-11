@@ -2,4 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* when height is less than 700 px */
+@media (max-height: 700px) {
+  .scroll-down-arrow-hero {
+    display: none;
+  }
+}

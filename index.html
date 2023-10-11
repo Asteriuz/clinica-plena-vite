@@ -1,793 +1,962 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica de Ginecologia e Vascular em Tatuapé, São Paulo. Oferecemos serviços especializados em saúde feminina e vascular, perto da estação de metrô Tatuapé. Marque sua consulta hoje!"
+    />
+    <meta name="keywords" content="clínica, ginecologia, vascular, Tatuapé, São Paulo, metrô Tatuapé, consulta médica" />
+    <title>Clinica Plena</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/logo/logo-white-circle.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/styles/animation.css" />
+    <script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script defer type="module" src="src/js/nav.js"></script>
+    <script defer type="module" src="src/js/hero.js"></script>
+    <script defer type="module" src="src/js/scroll.js"></script>
+    <script defer type="module" src="src/js/testimony.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Clínica de Ginecologia e Vascular em Tatuapé, São Paulo. Oferecemos serviços especializados em saúde feminina e vascular, perto da estação de metrô Tatuapé. Marque sua consulta hoje!" />
-  <meta name="keywords" content="clínica, ginecologia, vascular, Tatuapé, São Paulo, metrô Tatuapé, consulta médica" />
-  <title>Clinica Plena</title>
-  <link rel="icon" type="image/x-icon" href="src/assets/img/logo/logo-white-circle.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Roboto&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./src/index.css" />
-  <link rel="stylesheet" href="./src/styles/animation.css" />
-  <script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script defer type="module" src="src/js/nav.js"></script>
-  <script defer type="module" src="src/js/hero.js"></script>
-  <script defer type="module" src="src/js/scroll.js"></script>
-  <script defer type="module" src="src/js/testimony.js"></script>
-</head>
-
-<body class="min-h-screen w-screen overflow-x-hidden text-left font-inter text-2xl text-cinza-escuro">
-  <button type="button"
-    class="text-md !fixed bottom-5 right-5 z-50 rounded-full bg-red-600 p-4 font-medium uppercase leading-tight text-white invisible opacity-0 shadow-lg transition duration-300 ease-in-out hover:bg-red-700 hover:shadow-2xl focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-2xl lg:bottom-10 lg:right-12"
-    id="btn-back-to-top">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4 lg:h-6 lg:w-6" role="img"
-      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path fill="currentColor"
-        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-      </path>
-    </svg>
-  </button>
-  <header id="start" class="flex">
-    <nav id="navbar" class="fixed left-0 top-0 z-50 w-full bg-white shadow-xl duration-500 ease-in-out">
-      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-4">
-        <a href="#start">
-          <img class="max-h-20 drop-shadow-lg transition duration-300 ease-in-out hover:scale-110 md:max-h-24"
-            src="./src/assets/img/logo/logo.png" alt="Logo da Clinica Plena" />
-        </a>
-        <div class="flex items-center lg:order-2">
-          <a href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
-            target="_blank"
-            class="mr-3 flex gap-2 rounded-lg bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl lg:mr-0">
+  <body class="min-h-screen w-screen overflow-x-hidden text-left font-inter text-2xl text-cinza-escuro">
+    <button
+      type="button"
+      class="text-md invisible !fixed bottom-5 right-5 z-50 rounded-full bg-red-600 p-4 font-medium uppercase leading-tight text-white opacity-0 shadow-lg transition duration-300 ease-in-out hover:bg-red-700 hover:shadow-2xl focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-2xl lg:bottom-10 lg:right-12"
+      id="btn-back-to-top"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="h-4 w-4 lg:h-6 lg:w-6"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
+    <header id="start" class="flex">
+      <nav id="navbar" class="fixed left-0 top-0 z-50 w-full bg-white shadow-xl duration-500 ease-in-out">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-4">
+          <a href="#start">
+            <img
+              class="max-h-20 drop-shadow-lg transition duration-300 ease-in-out hover:scale-110 md:max-h-24"
+              src="./src/assets/img/logo/logo.png"
+              alt="Logo da Clinica Plena"
+            />
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+              target="_blank"
+              class="mr-3 flex gap-2 rounded-lg bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl lg:mr-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
+                <path
+                  d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <p class="hidden lg:block">Fale conosco</p>
+            </a>
+            <button
+              id="navbar-toggle"
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center justify-center rounded-lg text-cinza-claro focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Abrir o menu</span>
+              <svg id="hamburger-open" class="w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path id="hamburger" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+              <svg id="hamburger-close" class="hidden w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+            </button>
+          </div>
+          <div class="mx-auto hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" id="navbar-sticky">
+            <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:p-0">
+              <li>
+                <a
+                  href="#start"
+                  class="home nav-link block rounded bg-vermelho-claro py-2 pl-3 pr-4 text-white lg:bg-transparent lg:p-0 lg:text-vermelho-claro lg:hover:text-vermelho-escuro"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#servicos-wrapper"
+                  class="servicos-wrapper nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#medicos-wrapper"
+                  class="medicos-wrapper nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro"
+                >
+                  Médicos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro"
+                >
+                  Clínica
+                </a>
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex w-full items-center justify-between rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:w-auto lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro"
+                >
+                  Redes Sociais
+                  <svg class="ml-2.5 h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow">
+                  <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                    <li class="group">
+                      <a href="https://www.instagram.com/ginecologiasemfrescura/" target="_blank" class="flex gap-x-2 px-4 py-2 text-xl hover:bg-gray-100">
+                        <svg
+                          class="inline w-6 duration-300 ease-in-out group-hover:fill-pink-600"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                          />
+                          <path
+                            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                          />
+                        </svg>
+                        <p class="inline duration-300 ease-in-out group-hover:text-pink-600">Instagram</p></a
+                      >
+                    </li>
+                    <li class="group">
+                      <a
+                        href="https://www.facebook.com/p/Plena-Angelica-Sales-Ginecologista-100008361972234/?locale=pt_BR"
+                        target="_blank"
+                        class="flex gap-x-2 px-4 py-2 text-xl hover:bg-gray-100"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 duration-300 ease-in-out group-hover:fill-blue-600" viewBox="0 0 512 512">
+                          <path
+                            d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                        <p class="inline duration-300 ease-in-out group-hover:text-blue-600">Facebook</p></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mb-12 min-h-screen w-screen">
+      <div id="hero-container" class="relative w-full" data-carousel="static">
+        <div class="relative h-[calc(100dvh)] max-h-screen overflow-hidden">
+          <div
+            id="hero"
+            class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
+            data-carousel-item
+          >
+            <div class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
+              <div>
+                <h1 class="mb-3">BEM VINDO A</h1>
+                <h1 class="font-bold">
+                  CLINICA
+                  <span class="animate-character text-red-600">PLENA</span>
+                </h1>
+              </div>
+              <h3 class="mb-14 mt-2 text-lg md:text-xl">Sua saúde é nossa maior prioridade</h3>
+              <a
+                href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                target="_blank"
+                class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0"
+              >
+                <p class="flex items-center gap-2 text-base">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
+                    <path
+                      d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Saiba Mais
+                </p>
+              </a>
+            </div>
+            <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative w-16 animate-bounce text-white sm:bottom-0.5" viewBox="0 0 512 512">
+                <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
+              </svg>
+            </div>
+          </div>
+          <div
+            id="hero2"
+            class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic2.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
+            data-carousel-item
+          >
+            <div class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
+              <div>
+                <h1 class="mb-3">MÉDICOS DE</h1>
+                <h1 class="font-bold">
+                  <span class="animate-character text-red-600">QUALIDADE</span>
+                </h1>
+              </div>
+              <h3 class="mb-14 mt-2 text-lg md:text-xl">Excelência no atendimento ao cliente</h3>
+              <a
+                href="#medicos-wrapper"
+                target="_blank"
+                class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0"
+              >
+                <p class="flex items-center gap-2 text-base">Saiba Mais</p>
+              </a>
+            </div>
+            <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
+                <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
+              </svg>
+            </div>
+          </div>
+          <div
+            id="hero3"
+            class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic3.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
+            data-carousel-item
+          >
+            <div class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
+              <div>
+                <h1 class="mb-3">NOSSA CLÍNICA</h1>
+                <h1 class="font-bold">
+                  SUA
+                  <span class="animate-character text-red-600">SAÚDE</span>
+                </h1>
+              </div>
+              <h3 class="mb-14 mt-2 text-lg md:text-xl">Cuidando de você por completo</h3>
+              <a
+                href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                target="_blank"
+                class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0"
+              >
+                <p class="flex items-center gap-2 text-base">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
+                    <path
+                      d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Saiba Mais
+                </p>
+              </a>
+            </div>
+            <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
+                <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
+              </svg>
+            </div>
+          </div>
+          <div
+            id="hero4"
+            class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic4.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
+            data-carousel-item
+          >
+            <div class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
+              <div>
+                <h1 class="mb-3">NOSSA MISSÃO</h1>
+                <h1 class="font-bold">
+                  SAÚDE
+                  <span class="animate-character text-red-600">PLENA</span>
+                </h1>
+              </div>
+              <h3 class="mb-14 mt-2 text-lg md:text-xl">Venha nos visitar</h3>
+              <a
+                href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                target="_blank"
+                class="mr-3 flex items-center gap-2 rounded-full px-8 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0"
+              >
+                <p class="flex items-center gap-2 text-base">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
+                    <path
+                      d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Saiba Mais
+                </p>
+              </a>
+            </div>
+            <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
+                <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-5 left-1/2 z-40 flex -translate-x-1/2 space-x-3">
+          <button type="button" class="h-3 w-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        </div>
+        <button
+          type="button"
+          id="default-carousel-prev"
+          class="hero-button group absolute left-0 top-48 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none md:left-4 md:top-0"
+          data-carousel-prev
+        >
+          <span class="rounded-fulllg:ml-12 inline-flex h-10 w-10 items-center justify-center lg:mt-16 lg:h-16 lg:w-16">
+            <svg class="h-4 w-4 text-white lg:h-6 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          id="default-carousel-next"
+          class="hero-button group absolute right-0 top-48 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none md:right-4 md:top-0"
+          data-carousel-next
+        >
+          <span class="ease-in-outlg:mr-12 inline-flex h-10 w-10 items-center justify-center rounded-full duration-300 lg:mt-16 lg:h-16 lg:w-16">
+            <svg class="h-4 w-4 text-white lg:h-6 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+      <section id="servicos-wrapper" class="my-16 flex w-screen scroll-m-6 flex-col items-center justify-center gap-4">
+        <h3 class="obs-hidden text-2xl font-semibold tracking-widest text-vermelho-claro">Para Você</h3>
+        <h2 class="obs-hidden text-4xl tracking-widest">Nossos Serviços</h2>
+        <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
+        <div id="card-servicos" class="mx-2 flex flex-wrap justify-center gap-y-8 md:gap-x-4 lg:gap-x-10">
+          <div class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
+            <div class="min-h-[256px] overflow-hidden rounded-t-lg">
+              <img
+                class="min-h-[256px] rounded-t-lg duration-500 ease-in-out hover:scale-110"
+                src="src/assets/img/service-cards/ginecologia.jpg"
+                alt="Útero formado por flores"
+              />
+            </div>
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Ginecologia</h5>
+              <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
+              <p class="mb-3 text-lg text-cinza-claro">
+                A saúde da mulher requer atenção constante, desde a adolescência até a maturidade. Exames regulares e cuidados preventivos são essenciais.
+              </p>
+              <ul class="flex flex-col gap-y-2">
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Consulta de rotina</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Prevenção de Câncer de colo uterino</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Contracepção / DIU / Implante</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Atenção a mulher no climatério</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Terapia de Reposição Hormonal</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Tratamento de infeções causadas por HPV e corrimentos vaginais</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div style="--delay: 4" class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl delay-200">
+            <div class="overflow-hidden rounded-t-lg">
+              <img
+                class="min-h-[256px] rounded-t-lg duration-500 ease-in-out hover:scale-110"
+                src="src/assets/img/service-cards/vascular-body.jpg"
+                alt="Vascular Card"
+              />
+            </div>
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Vascular</h5>
+              <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
+              <p class="mb-3 text-lg text-cinza-claro">
+                Prevenir doenças circulatórias e adotar hábitos saudáveis garantem uma vida plena e livre de complicações.
+              </p>
+              <ul class="flex flex-col gap-y-2">
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Diagnóstico de doenças</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Tratamento de varizes</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Tratamento de aneurismas</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Angioplastia</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Acompanhamento de pacientes</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div style="--delay: 8" class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
+            <div class="overflow-hidden rounded-t-lg">
+              <img class="rounded-t-lg duration-500 ease-in-out hover:scale-110" src="src/assets/img/service-cards/procedimento.jpg" alt="Procedimento Card" />
+            </div>
+            <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Procedimentos</h5>
+              <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
+              <p class="mb-3 text-lg text-cinza-claro">
+                Condutas diagnósticas e terapêuticas para cura e melhora da qualidade de vida na área ginecológica e angiologia (Cirurgia Vascular)
+              </p>
+              <ul class="flex flex-col gap-y-2">
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Coleta de citologia</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Pesquisa de infeçcões vaginais</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Pesquisa de HPV</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">Colposcopia / Vulvoscopia</p>
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <p class="text-lg text-cinza-claro">FRAXX / Laser</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimony-wrapper" class="bg-neutral-100">
+        <div id="testimony" class="mx-auto my-12 flex max-w-[1400px] flex-col items-center justify-center xl:flex-row xl:gap-y-8">
+          <div class="mb-3 flex grow-0 flex-col gap-4 p-4 md:mb-0 md:p-14 xl:p-12">
+            <h3 class="obs-hidden font-thin tracking-widest text-vermelho-claro">REVIEWS NO MAPS</h3>
+            <h2 class="obs-hidden mb-2 text-3xl tracking-widest">NOSSOS PACIENTES DIZEM</h2>
+            <div
+              id="testimony-slide"
+              class="obs-hidden relative my-4 overflow-x-hidden rounded-md bg-white text-xl italic text-cinza-claro shadow-[rgba(0,0,0,0.35)_0px_5px_15px]"
+            >
+              <div id="testimony-container" class="grid gap-3 p-6 duration-500 ease-in-out md:min-w-[568px] md:grid-cols-[1fr,9fr]">
+                <img id="testimony-img" src="/src/assets/img/testimony/person1.png" alt="Foto de perfil da review" />
+                <p id="testimony-text" class="leading-8">
+                  Melhor Doutora ginecologista da vida! Amorosa, super profissional, dedicada, entende do riscado, consulta de 1 hora, só posso recomendar a
+                  todas! Gratidão!
+                </p>
+                <div>&nbsp;</div>
+                <div class="star-wrapper flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    />
+                  </svg>
+                </div>
+                <p></p>
+                <p id="testimony-name" class="text-base not-italic">Laura Kim (Local Guide)</p>
+              </div>
+              <div id="controllers" class="absolute bottom-2 right-4 flex gap-x-6">
+                <button id="testimony-prev" class="">
+                  <svg class="h-4 w-4 text-cinza-claro lg:h-6 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 1 1 5l4 4" />
+                  </svg>
+                </button>
+                <p id="testimony-number" class="text-xl not-italic tracking-widest">1 / 4</p>
+                <button id="testimony-next" class="">
+                  <svg
+                    class="z-50 h-4 w-4 cursor-pointer text-cinza-claro lg:h-6 lg:w-6"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m1 9 4-4-4-4" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="obs-hidden flex flex-col gap-y-5">
+              <div class="stars-review -mb-2 flex items-center">
+                <p class="ml-1 mr-2 text-3xl font-medium">4.8</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+              </div>
+              <div class="w-48">
+                <a href="https://maps.app.goo.gl/Ddn8kXW6kGEqfARL8" target="_blank"
+                  ><img src="src/assets/img/testimony/maps-logo.png" class="w-48" alt="Logo do Google Maps"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <img
+            class="obs-hidden rounded-3xl px-4 md:-mt-6 md:px-16 xl:max-w-[640px] xl:px-2"
+            src="src/assets/img/testimony/happyperson.jpg"
+            alt="Pessoa feliz em uma clinica"
+          />
+        </div>
+      </section>
+      <section id="medicos-wrapper" class="flex w-full scroll-m-6 flex-col items-center gap-4">
+        <h3 class="obs-hidden font-semibold tracking-widest text-vermelho-claro">Tudo em família</h3>
+        <h2 class="obs-hidden text-4xl tracking-widest">Nossos Médicos</h2>
+        <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
+        <div id="cards-medicos" class="my-12 flex w-full flex-wrap justify-center gap-x-10 gap-y-20 px-12 lg:gap-x-20">
+          <div
+            id="angelica-card"
+            class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div
+              class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]"
+            >
+              <img src="src/assets/img/medicos/angelica.jpg" class="object-contain" alt="Foto da Dra Angelica" />
+            </div>
+            <div class="mx-5 my-4 flex flex-col gap-2">
+              <h5 class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">Dra. Angélica Sales Barcelos</h5>
+              <h4 class="mb-4 text-[27px] tracking-wide text-vermelho-claro">Ginecologista</h4>
+              <ul class="flex flex-col gap-y-2 text-lg text-cinza-claro">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Especialista em Ginecologia e Obstetrícia pela FEBRASGO
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Mestrado em Ciências da Saúde pela Santa Casa de Misericórdia de São Paulo
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Pós-Graduação Latu-sensu em Sexualidade Humana
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Qualificação em Patologia do Trato Genital Inferior e Colposcopia
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Professora da disciplina de ginecologia e urologia da Faculdade de Medicina Santa Marcelina
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Preceptora da Residência Médica do Hospital Santa Marcelina
+                </li>
+              </ul>
+              <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
+              <p class="self-center tracking-wider">CRM: 82185</p>
+            </div>
+          </div>
+          <div
+            id="orlando-card"
+            style="--delay: 4"
+            class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+          >
+            <div
+              class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]"
+            >
+              <img src="src/assets/img/medicos/orlando.jpg" class="object-contain" alt="Foto do Dr. Orlando" />
+            </div>
+            <div class="mx-5 my-4 flex grow flex-col gap-2">
+              <h5 class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">Dr. Orlando da Costa Barros</h5>
+              <h4 class="mb-3 text-[27px] tracking-wide text-vermelho-claro">Cirurgião Vascular</h4>
+              <ul class="flex grow flex-col gap-y-2 text-lg text-cinza-claro">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Especialista em Angiologia e cirurgia vascular pela SBACV
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Área de atuação em ecografia vascular
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Preceptor da Residência Médica do Hospital Santa Marcelina
+                </li>
+              </ul>
+              <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
+              <p class="self-center tracking-wider">CRM: 78706</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.4551539328395!2d-46.580374707374844!3d-23.54229871525154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec361fe8e29%3A0x2c478d18ddf7f47a!2sClinica%20Plena!5e0!3m2!1spt-BR!2sbr!4v1696359766580!5m2!1spt-BR!2sbr"
+      class="obs-hidden m-0 h-96 w-screen p-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer class="bg-white p-4 text-base lg:py-8">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+          <div class="obs-hidden m-4 mb-8 md:mb-0">
+            <a href="#start" class="flex justify-center">
+              <img src="./src/assets/img/logo/logo.png" class="h-28 grayscale duration-300 ease-in-out hover:grayscale-0" alt="Logo da Clinica Plena" />
+            </a>
+          </div>
+          <div
+            class="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:gap-6 md:w-10/12 md:grid-cols-4 md:gap-10 md:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]"
+          >
+            <div class="obs-hidden" style="--delay: 3">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Contato</h2>
+              <ul class="font-medium text-cinza-claro">
+                <li class="group mb-4">
+                  <a
+                    href="mailto:plenasaude@hotmail.com"
+                    class="flex justify-center gap-1 break-all hover:underline group-hover:text-orange-500 md:justify-start"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 shrink-0 fill-none" viewBox="0 0 512 512">
+                      <rect
+                        x="48"
+                        y="96"
+                        width="416"
+                        height="320"
+                        rx="40"
+                        ry="40"
+                        class="group-hover:stroke-orange-500"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                      />
+                      <path
+                        class="group-hover:stroke-orange-500"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                        d="M112 160l144 112 144-112"
+                      />
+                    </svg>
+                    <span class="break-words">plenasaude@hotmail.com</span>
+                  </a>
+                </li>
+                <li class="group mb-4 transition-colors">
+                  <a href="tel:+551120936530" class="flex justify-center gap-1 hover:underline group-hover:text-blue-500 md:justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 shrink-0 fill-none" viewBox="0 0 512 512">
+                      <path
+                        d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
+                        class="group-hover:stroke-blue-500"
+                        stroke="currentColor"
+                        stroke-miterlimit="10"
+                        stroke-width="32"
+                      />
+                    </svg>
+                    (11) 20936530
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    class="flex justify-center gap-1 md:justify-start"
+                    target="_blank"
+                    href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                  >
+                    <svg
+                      class="w-6 shrink-0 group-hover:fill-green-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="group-hover:text-green-500 group-hover:underline"> (11) 941539651 </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="obs-hidden" style="--delay: 6">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Onde Estamos</h2>
+              <ul class="flex flex-col gap-y-4 font-medium text-cinza-claro">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
+                    <path
+                      d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                    <circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                  </svg>
+                  <p class="inline">Rua Catiguá, 159</p>
+                  <p class="leading-8">Sala 411 - 4º andar</p>
+                  <p class="leading-6">Tatuapé, São Paulo</p>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
+                    <rect x="112" y="32" width="288" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M208 80h96" />
+                    <rect
+                      x="112"
+                      y="128"
+                      width="288"
+                      height="96"
+                      rx="32"
+                      ry="32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                    <circle cx="176" cy="320" r="16" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                    <circle cx="336" cy="320" r="16" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M144 464h224M336 432l48 48M176 432l-48 48"
+                    />
+                  </svg>
+                  <p class="inline">Perto do metro Tatuapé</p>
+                </li>
+              </ul>
+            </div>
+            <div class="obs-hidden" style="--delay: 9">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Horário de Atendimento</h2>
+              <ul class="font-medium text-cinza-claro">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
+                    <path
+                      d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="32"
+                    />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96" />
+                  </svg>
+                  <p class="inline">Segunda a Sexta-feira:</p>
+                  <p class="leading-8">Das 08h00 às 17h00</p>
+                </li>
+              </ul>
+            </div>
+            <div class="obs-hidden" style="--delay: 12">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Siga-nos</h2>
+              <ul class="font-medium text-cinza-claro">
+                <li class="mb-4">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/ginecologiasemfrescura/"
+                    class="duration-300 ease-in-out hover:text-pink-600 hover:underline"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/p/Plena-Angelica-Sales-Ginecologista-100008361972234/?locale=pt_BR"
+                    class="duration-300 ease-in-out hover:text-blue-500 hover:underline"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                    class="duration-300 ease-in-out hover:text-green-500 hover:underline"
+                  >
+                    Whatsapp
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="flex-wrap gap-x-6 text-center sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-cinza-claro sm:text-center">
+            © 2023
+            <a target="_blank" href="https://github.com/Asteriuz" class="hover:underline"> Asteriuz™ </a>
+            . All Rights Reserved.
+          </span>
+          <a
+            href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta"
+            class="my-8 mr-3 flex justify-center gap-2 rounded-lg bg-green-500 p-4 text-center text-2xl text-white shadow-lg duration-300 ease-in-out hover:bg-green-600 md:mr-0"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
               <path
                 d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                fill-rule="evenodd" />
+                fill-rule="evenodd"
+              />
             </svg>
-            <p class="hidden lg:block">Fale conosco</p>
+            Agende sua consulta
           </a>
-          <button id="navbar-toggle" data-collapse-toggle="navbar-sticky" type="button"
-            class="inline-flex items-center justify-center rounded-lg text-cinza-claro focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden"
-            aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Abrir o menu</span>
-            <svg id="hamburger-open" class="w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 17 14">
-              <path id="hamburger" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-            <svg id="hamburger-close" class="hidden w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 14 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-            </svg>
-          </button>
-        </div>
-        <div class="mx-auto hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" id="navbar-sticky">
-          <ul
-            class="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:p-0">
-            <li>
-              <a href="#start"
-                class="home nav-link block rounded bg-vermelho-claro py-2 pl-3 pr-4 text-white lg:bg-transparent lg:p-0 lg:text-vermelho-claro lg:hover:text-vermelho-escuro"
-                aria-current="page">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#servicos-wrapper"
-                class="servicos-wrapper nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro">
-                Serviços
-              </a>
-            </li>
-            <li>
-              <a href="#medicos-wrapper"
-                class="medicos-wrapper nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro">
-                Médicos
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                class="nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro">
-                Clínica
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                class="nav-link block rounded py-2 pl-3 pr-4 text-cinza-escuro hover:bg-gray-100 lg:p-0 lg:hover:bg-transparent lg:hover:text-vermelho-escuro">
-                Redes Sociais
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="mb-12 min-h-screen w-screen">
-    <div id="hero-container" class="relative w-full" data-carousel="static">
-      <div class="relative h-[calc(100dvh)] max-h-screen overflow-hidden">
-        <div id="hero"
-          class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
-          data-carousel-item>
-          <div
-            class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
-            <div>
-              <h1 class="mb-3">BEM VINDO A</h1>
-              <h1 class="font-bold">
-                CLINICA
-                <span class="animate-character text-red-600">PLENA</span>
-              </h1>
-            </div>
-            <h3 class="mb-14 mt-2 text-lg md:text-xl">Sua saúde é nossa maior prioridade</h3>
-            <a href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+          <div class="mt-4 flex justify-center space-x-5 sm:mt-0">
+            <a target="_blank" href="https://www.instagram.com/ginecologiasemfrescura/" class="text-cinza-claro hover:text-cinza-escuro">
+              <svg
+                class="w-10 duration-300 ease-in-out hover:fill-pink-600"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                />
+                <path
+                  d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                />
+              </svg>
+              <span class="sr-only">Página do Instagram</span>
+            </a>
+            <a
               target="_blank"
-              class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0">
-              <p class="flex items-center gap-2 text-base">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-                  <path
-                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                    fill-rule="evenodd" />
-                </svg>
-                Saiba Mais
-              </p>
+              href="https://www.facebook.com/p/Plena-Angelica-Sales-Ginecologista-100008361972234/?locale=pt_BR"
+              class="text-cinza-claro hover:text-cinza-escuro"
+            >
+              <svg
+                class="w-10 duration-300 ease-in-out hover:fill-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Página do Facebook</span>
             </a>
-          </div>
-          <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="ionicon relative w-16 animate-bounce text-white sm:bottom-0.5" viewBox="0 0 512 512">
-              <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="48" d="M112 184l144 144 144-144" />
-            </svg>
-          </div>
-        </div>
-        <div id="hero2"
-          class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic2.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
-          data-carousel-item>
-          <div
-            class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
-            <div>
-              <h1 class="mb-3">MÉDICOS DE</h1>
-              <h1 class="font-bold">
-                <span class="animate-character text-red-600">QUALIDADE</span>
-              </h1>
-            </div>
-            <h3 class="mb-14 mt-2 text-lg md:text-xl">Excelência no atendimento ao cliente</h3>
-            <a href="#medicos-wrapper" target="_blank"
-              class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0">
-              <p class="flex items-center gap-2 text-base">Saiba Mais</p>
-            </a>
-          </div>
-          <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white"
-              viewBox="0 0 512 512">
-              <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="48" d="M112 184l144 144 144-144" />
-            </svg>
-          </div>
-        </div>
-        <div id="hero3"
-          class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic3.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
-          data-carousel-item>
-          <div
-            class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
-            <div>
-              <h1 class="mb-3">NOSSA CLÍNICA</h1>
-              <h1 class="font-bold">
-                SUA
-                <span class="animate-character text-red-600">SAÚDE</span>
-              </h1>
-            </div>
-            <h3 class="mb-14 mt-2 text-lg md:text-xl">Cuidando de você por completo</h3>
-            <a href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+            <a
               target="_blank"
-              class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0">
-              <p class="flex items-center gap-2 text-base">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-                  <path
-                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                    fill-rule="evenodd" />
-                </svg>
-                Saiba Mais
-              </p>
+              href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+              class="text-cinza-claro hover:text-cinza-escuro"
+            >
+              <svg
+                class="w-10 duration-300 ease-in-out hover:fill-green-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Página do Whatsapp</span>
             </a>
           </div>
-          <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white"
-              viewBox="0 0 512 512">
-              <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="48" d="M112 184l144 144 144-144" />
-            </svg>
-          </div>
-        </div>
-        <div id="hero4"
-          class="flex h-screen w-screen flex-col items-center justify-center bg-black/50 bg-[url('assets/img/hero/clinic4.jpg')] bg-cover bg-center bg-blend-darken duration-1000"
-          data-carousel-item>
-          <div
-            class="mt-20 flex flex-col items-center gap-3 text-center text-5xl leading-tight text-white drop-shadow-2xl md:gap-5 md:text-7xl">
-            <div>
-              <h1 class="mb-3">NOSSA MISSÃO</h1>
-              <h1 class="font-bold">
-                SAÚDE
-                <span class="animate-character text-red-600">PLENA</span>
-              </h1>
-            </div>
-            <h3 class="mb-14 mt-2 text-lg md:text-xl">Venha nos visitar</h3>
-            <a href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
-              target="_blank"
-              class="mr-3 flex items-center gap-2 rounded-full px-8 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0">
-              <p class="flex items-center gap-2 text-base">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-                  <path
-                    d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                    fill-rule="evenodd" />
-                </svg>
-                Saiba Mais
-              </p>
-            </a>
-          </div>
-          <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white"
-              viewBox="0 0 512 512">
-              <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="48" d="M112 184l144 144 144-144" />
-            </svg>
-          </div>
         </div>
       </div>
-      <div class="absolute bottom-5 left-1/2 z-40 flex -translate-x-1/2 space-x-3">
-        <button type="button" class="h-3 w-3 rounded-full" aria-current="true" aria-label="Slide 1"
-          data-carousel-slide-to="0"></button>
-        <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 2"
-          data-carousel-slide-to="1"></button>
-        <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 3"
-          data-carousel-slide-to="2"></button>
-        <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 4"
-          data-carousel-slide-to="3"></button>
-      </div>
-      <button type="button" id="default-carousel-prev"
-        class="hero-button group absolute left-0 top-48 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none md:left-4 md:top-0"
-        data-carousel-prev>
-        <span class="rounded-fulllg:ml-12 inline-flex h-10 w-10 items-center justify-center lg:mt-16 lg:h-16 lg:w-16">
-          <svg class="h-4 w-4 text-white lg:h-6 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-            fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M5 1 1 5l4 4" />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button type="button" id="default-carousel-next"
-        class="hero-button group absolute right-0 top-48 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none md:right-4 md:top-0"
-        data-carousel-next>
-        <span
-          class="ease-in-outlg:mr-12 inline-flex h-10 w-10 items-center justify-center rounded-full duration-300 lg:mt-16 lg:h-16 lg:w-16">
-          <svg class="h-4 w-4 text-white lg:h-6 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-            fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="m1 9 4-4-4-4" />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
-    </div>
-    <section id="servicos-wrapper" class="my-16 flex w-screen scroll-m-6 flex-col items-center justify-center gap-4">
-      <h3 class="obs-hidden text-xl font-semibold tracking-widest text-vermelho-claro">Para Você</h3>
-      <h2 class="obs-hidden text-4xl tracking-widest">Nossos Serviços</h2>
-      <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
-      <div id="card-servicos" class="mx-2 flex flex-wrap justify-center gap-y-8 md:gap-x-4 lg:gap-x-10">
-        <div class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
-          <div class="min-h-[256px] overflow-hidden rounded-t-lg">
-            <img class="min-h-[256px] rounded-t-lg duration-500 ease-in-out hover:scale-110"
-              src="src/assets/img/service-cards/ginecologia.jpg" alt="Útero formado por flores" />
-          </div>
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Ginecologia</h5>
-            <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
-            <p class="mb-3 text-lg text-cinza-claro">
-              A saúde da mulher requer atenção constante, desde a adolescência até a maturidade. Exames regulares e
-              cuidados preventivos são essenciais.
-            </p>
-            <ul class="flex flex-col gap-y-2">
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Consulta de rotina</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Prevenção de Câncer de colo uterino</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Contracepção / DIU / Implante</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Atenção a mulher no climatério</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Terapia de Reposição Hormonal</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Tratamento de infeções causadas por HPV e corrimentos vaginais</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div style="--delay: 4"
-          class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl delay-200">
-          <div class="overflow-hidden rounded-t-lg">
-            <img class="min-h-[256px] rounded-t-lg duration-500 ease-in-out hover:scale-110"
-              src="src/assets/img/service-cards/vascular-body.jpg" alt="Vascular Card" />
-          </div>
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Vascular</h5>
-            <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
-            <p class="mb-3 text-lg text-cinza-claro">
-              Prevenir doenças circulatórias e adotar hábitos saudáveis garantem uma vida plena e livre de complicações.
-            </p>
-            <ul class="flex flex-col gap-y-2">
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Diagnóstico de doenças</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Tratamento de varizes</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Tratamento de aneurismas</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Angioplastia</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Acompanhamento de pacientes</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div style="--delay: 8" class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
-          <div class="overflow-hidden rounded-t-lg">
-            <img class="rounded-t-lg duration-500 ease-in-out hover:scale-110"
-              src="src/assets/img/service-cards/procedimento.jpg" alt="Procedimento Card" />
-          </div>
-          <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Procedimentos</h5>
-            <hr class="my-4 h-1 w-10 rounded border-0 bg-vermelho-claro" />
-            <p class="mb-3 text-lg text-cinza-claro">
-              Condutas diagnósticas e terapêuticas para cura e melhora da qualidade de vida na área ginecológica e
-              angiologia (Cirurgia Vascular)
-            </p>
-            <ul class="flex flex-col gap-y-2">
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Coleta de citologia</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Pesquisa de infeçcões vaginais</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Pesquisa de HPV</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">Colposcopia / Vulvoscopia</p>
-              </li>
-              <li class="flex items-center gap-x-2">
-                <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
-                <p class="text-lg text-cinza-claro">FRAXX / Laser</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimony-wrapper" class="bg-neutral-100">
-      <div id="testimony"
-        class="mx-auto my-12 flex max-w-[1400px] flex-col items-center justify-center xl:flex-row xl:gap-y-8">
-        <div class="mb-3 flex grow-0 flex-col gap-4 p-4 md:mb-0 md:p-14 xl:p-12">
-          <h3 class="obs-hidden font-thin tracking-widest text-vermelho-claro">REVIEWS NO MAPS</h3>
-          <h2 class="obs-hidden mb-2 text-3xl tracking-widest">NOSSOS PACIENTES DIZEM</h2>
-          <div id="testimony-slide"
-            class="obs-hidden relative my-4 overflow-x-hidden rounded-md bg-white text-xl italic text-cinza-claro shadow-[rgba(0,0,0,0.35)_0px_5px_15px]">
-            <div id="testimony-container"
-              class="grid gap-3 p-6 duration-500 ease-in-out md:min-w-[568px] md:grid-cols-[1fr,9fr]">
-              <img id="testimony-img" src="/src/assets/img/testimony/person1.png" alt="Foto de perfil da review" />
-              <p id="testimony-text" class="leading-8">
-                Melhor Doutora ginecologista da vida! Amorosa, super profissional, dedicada, entende do riscado,
-                consulta de 1 hora, só posso recomendar a
-                todas! Gratidão!
-              </p>
-              <div>&nbsp;</div>
-              <div class="star-wrapper flex">
-                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                </svg>
-              </div>
-              <p></p>
-              <p id="testimony-name" class="text-base not-italic">Laura Kim (Local Guide)</p>
-            </div>
-            <div id="controllers" class="absolute bottom-2 right-4 flex gap-x-6">
-              <button id="testimony-prev" class="">
-                <svg class="h-4 w-4 text-cinza-claro lg:h-6 lg:w-6" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                    d="M5 1 1 5l4 4" />
-                </svg>
-              </button>
-              <p id="testimony-number" class="text-xl not-italic tracking-widest">1 / 4</p>
-              <button id="testimony-next" class="">
-                <svg class="z-50 h-4 w-4 cursor-pointer text-cinza-claro lg:h-6 lg:w-6" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="obs-hidden flex flex-col gap-y-5">
-            <div class="stars-review -mb-2 flex items-center">
-              <p class="ml-1 mr-2 text-3xl font-medium">4.8</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#eeb461]" height="1em" viewBox="0 0 576 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-              </svg>
-            </div>
-            <div class="w-48">
-              <a href="https://maps.app.goo.gl/Ddn8kXW6kGEqfARL8" target="_blank"><img
-                  src="src/assets/img/testimony/maps-logo.png" class="w-48" alt="Logo do Google Maps" /></a>
-            </div>
-          </div>
-        </div>
-        <img class="obs-hidden rounded-3xl px-4 md:-mt-6 md:px-16 xl:max-w-[640px] xl:px-2"
-          src="src/assets/img/testimony/happyperson.jpg" alt="Pessoa feliz em uma clinica" />
-      </div>
-    </section>
-    <section id="medicos-wrapper" class="flex w-full scroll-m-6 flex-col items-center gap-4">
-      <h3 class="obs-hidden font-semibold tracking-widest text-vermelho-claro">Tudo em família</h3>
-      <h2 class="obs-hidden text-4xl tracking-widest">Nossos Médicos</h2>
-      <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
-      <div id="cards-medicos" class="my-12 flex w-full flex-wrap justify-center gap-x-10 gap-y-20 px-12 lg:gap-x-20">
-        <div id="angelica-card"
-          class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div
-            class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]">
-            <img src="src/assets/img/medicos/angelica.jpg" class="object-contain" alt="" />
-          </div>
-          <div class="mx-5 my-4 flex flex-col gap-2">
-            <h5
-              class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">
-              Dra. Angélica Sales Barcelos</h5>
-            <h4 class="mb-4 text-[27px] tracking-wide text-vermelho-claro">Ginecologista</h4>
-            <ul class="flex flex-col gap-y-2 text-lg text-cinza-claro">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Especialista em Ginecologia e Obstetrícia pela FEBRASGO
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Mestrado em Ciências da Saúde pela Santa Casa de Misericórdia de São Paulo
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Pós-Graduação Latu-sensu em Sexualidade Humana
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Qualificação em Patologia do Trato Genital Inferior e Colposcopia
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Professora da disciplina de ginecologia e urologia da Faculdade de Medicina Santa Marcelina
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Preceptora da Residência Médica do Hospital Santa Marcelina
-              </li>
-            </ul>
-            <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
-            <p class="self-center tracking-wider">CRM: 82185</p>
-          </div>
-        </div>
-        <div id="orlando-card" style="--delay:4"
-          class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-          <div
-            class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]">
-            <img src="src/assets/img/medicos/orlando.jpg" class="object-contain" alt="" />
-          </div>
-          <div class="mx-5 my-4 flex grow flex-col gap-2">
-            <h5
-              class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">
-              Dr. Orlando da Costa Barros</h5>
-            <h4 class="mb-3 text-[27px] tracking-wide text-vermelho-claro">Cirurgião Vascular</h4>
-            <ul class="flex grow flex-col gap-y-2 text-lg text-cinza-claro">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Especialista em Angiologia e cirurgia vascular pela SBACV
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Área de atuação em ecografia vascular
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="40" d="M416 128L192 384l-96-96" />
-                </svg>
-                Preceptor da Residência Médica do Hospital Santa Marcelina
-              </li>
-            </ul>
-            <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
-            <p class="self-center tracking-wider">CRM: 78706</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.4551539328395!2d-46.580374707374844!3d-23.54229871525154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec361fe8e29%3A0x2c478d18ddf7f47a!2sClinica%20Plena!5e0!3m2!1spt-BR!2sbr!4v1696359766580!5m2!1spt-BR!2sbr"
-    class="obs-hidden m-0 h-96 w-screen p-0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <footer class="bg-white p-4 text-base lg:py-8">
-    <div class="mx-auto w-full max-w-screen-xl">
-      <div class="md:flex md:justify-between">
-        <div class="obs-hidden m-4 mb-8 md:mb-0">
-          <a href="#start" class="flex justify-center">
-            <img src="./src/assets/img/logo/logo.png" class="h-28 grayscale duration-300 ease-in-out hover:grayscale-0"
-              alt="Logo da Clinica Plena" />
-          </a>
-        </div>
-        <div
-          class="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:gap-6 md:w-10/12 md:grid-cols-4 md:gap-10 md:text-left lg:grid-cols-[2fr,2fr,2fr,1fr]">
-          <div class="obs-hidden" style="--delay:3">
-            <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Contato</h2>
-            <ul class="font-medium text-cinza-claro">
-              <li class="group mb-4">
-                <a href="mailto:plenasaude@hotmail.com"
-                  class="flex justify-center gap-1 break-all hover:underline group-hover:text-orange-500 md:justify-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 shrink-0 fill-none" viewBox="0 0 512 512">
-                    <rect x="48" y="96" width="416" height="320" rx="40" ry="40" class="group-hover:stroke-orange-500"
-                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                    <path class="group-hover:stroke-orange-500" stroke="currentColor" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112" />
-                  </svg>
-                  <span class="break-words">plenasaude@hotmail.com</span>
-                </a>
-              </li>
-              <li class="group mb-4 transition-colors">
-                <a href="tel:+551120936530"
-                  class="flex justify-center gap-1 hover:underline group-hover:text-blue-500 md:justify-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 shrink-0 fill-none" viewBox="0 0 512 512">
-                    <path
-                      d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z"
-                      class="group-hover:stroke-blue-500" stroke="currentColor" stroke-miterlimit="10"
-                      stroke-width="32" />
-                  </svg>
-                  (11) 20936530
-                </a>
-              </li>
-              <li class="group">
-                <a class="flex justify-center gap-1 md:justify-start" target="_blank"
-                  href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena">
-                  <svg class="w-6 shrink-0 group-hover:fill-green-500" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-                    <path
-                      d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                      fill-rule="evenodd" />
-                  </svg>
-                  <span class="group-hover:text-green-500 group-hover:underline"> (11) 941539651 </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="obs-hidden" style="--delay:6">
-            <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Onde Estamos</h2>
-            <ul class="flex flex-col gap-y-4 font-medium text-cinza-claro">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
-                  <path
-                    d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
-                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" />
-                  <circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="32" />
-                </svg>
-                <p class="inline">Rua Catiguá, 159</p>
-                <p class="leading-8">Sala 411 - 4º andar</p>
-                <p class="leading-6">Tatuapé, São Paulo</p>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
-                  <rect x="112" y="32" width="288" height="352" rx="48" ry="48" fill="none" stroke="currentColor"
-                    stroke-miterlimit="10" stroke-width="32" />
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M208 80h96" />
-                  <rect x="112" y="128" width="288" height="96" rx="32" ry="32" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                  <circle cx="176" cy="320" r="16" fill="none" stroke="currentColor" stroke-linejoin="round"
-                    stroke-width="32" />
-                  <circle cx="336" cy="320" r="16" fill="none" stroke="currentColor" stroke-linejoin="round"
-                    stroke-width="32" />
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M144 464h224M336 432l48 48M176 432l-48 48" />
-                </svg>
-                <p class="inline">Perto do metro Tatuapé</p>
-              </li>
-            </ul>
-          </div>
-          <div class="obs-hidden" style="--delay:9">
-            <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Horário de Atendimento</h2>
-            <ul class="font-medium text-cinza-claro">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6" viewBox="0 0 512 512">
-                  <path d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none"
-                    stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M256 128v144h96" />
-                </svg>
-                <p class="inline">Segunda a Sexta-feira:</p>
-                <p class="leading-8">Das 08h00 às 17h00</p>
-              </li>
-            </ul>
-          </div>
-          <div class="obs-hidden" style="--delay:12">
-            <h2 class="mb-6 text-sm font-semibold uppercase text-cinza-escuro">Siga-nos</h2>
-            <ul class="font-medium text-cinza-claro">
-              <li class="mb-4">
-                <a target="_blank" href="https://www.instagram.com/ginecologiasemfrescura/"
-                  class="duration-300 ease-in-out hover:text-pink-600 hover:underline">
-                  Instagram
-                </a>
-              </li>
-              <li class="mb-4">
-                <a target="_blank"
-                  href="https://www.facebook.com/p/Plena-Angelica-Sales-Ginecologista-100008361972234/?locale=pt_BR"
-                  class="duration-300 ease-in-out hover:text-blue-500 hover:underline">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a target="_blank"
-                  href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
-                  class="duration-300 ease-in-out hover:text-green-500 hover:underline">
-                  Whatsapp
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-      <div class="flex-wrap gap-x-6 text-center sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-cinza-claro sm:text-center">
-          © 2023
-          <a target="_blank" href="https://github.com/Asteriuz" class="hover:underline"> Asteriuz™ </a>
-          . All Rights Reserved.
-        </span>
-        <a href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
-          class="my-8 mr-3 flex justify-center gap-2 rounded-lg bg-green-500 p-4 text-center text-2xl text-white shadow-lg duration-300 ease-in-out hover:bg-green-600 md:mr-0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-            <path
-              d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-              fill-rule="evenodd" />
-          </svg>
-          Agende sua consulta
-        </a>
-        <div class="mt-4 flex justify-center space-x-5 sm:mt-0">
-          <a target="_blank" href="https://www.instagram.com/ginecologiasemfrescura/"
-            class="text-cinza-claro hover:text-cinza-escuro">
-            <svg class="w-10 duration-300 ease-in-out hover:fill-pink-600" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-              <path
-                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
-              <path
-                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
-            </svg>
-            <span class="sr-only">Página do Instagram</span>
-          </a>
-          <a target="_blank"
-            href="https://www.facebook.com/p/Plena-Angelica-Sales-Ginecologista-100008361972234/?locale=pt_BR"
-            class="text-cinza-claro hover:text-cinza-escuro">
-            <svg class="w-10 duration-300 ease-in-out hover:fill-blue-500" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-              <path
-                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
-                fill-rule="evenodd" />
-            </svg>
-            <span class="sr-only">Página do Facebook</span>
-          </a>
-          <a target="_blank"
-            href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
-            class="text-cinza-claro hover:text-cinza-escuro">
-            <svg class="w-10 duration-300 ease-in-out hover:fill-green-500" aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-              <path
-                d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                fill-rule="evenodd" />
-            </svg>
-            <span class="sr-only">Página do Whatsapp</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

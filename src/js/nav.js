@@ -84,7 +84,6 @@ window.addEventListener("scroll", () => {
   if (pageYOffset < 800) {
     current = "home"
   }
-  console.log(current)
 
   navLi.forEach((li) => {
     li.classList.remove("lg:text-vermelho-claro")

@@ -37,7 +37,6 @@ nextButton.addEventListener("click", resetSlideInterval)
 
 resetSlideInterval()
 
-
 // Scroll down arrow
 var arrowElement = document.querySelectorAll(".scroll-down-arrow-hero")
 
