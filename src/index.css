@@ -6,6 +6,22 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#hero {
+  background-image: url(./assets/img/hero/clinic.jpg);
+}
+
+#hero2 {
+  background-image: url(./assets/img/hero/clinic2.jpg);
+}
+
+#hero3 {
+  background-image: url(./assets/img/hero/clinic3.jpg);
+}
+
+#hero4 {
+  background-image: url(./assets/img/hero/clinic4.jpg);
+}
+
 /* when height is less than 700 px */
 @media (max-height: 700px) {
   .scroll-down-arrow-hero {
