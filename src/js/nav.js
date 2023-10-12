@@ -66,38 +66,42 @@ const backToTop = () => {
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop)
 
-window.addEventListener("scroll", scrollFunction)
+window.addEventListener("scroll", scrollFunction, { passive: true })
 
 // change active depending on scroll position
 const sections = document.querySelectorAll("section")
 const navLi = document.querySelectorAll(".nav-link")
 
-window.addEventListener("scroll", () => {
-  let current = ""
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.clientHeight
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-      current = section.getAttribute("id")
+window.addEventListener(
+  "scroll",
+  () => {
+    let current = ""
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop
+      const sectionHeight = section.clientHeight
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id")
+      }
+    })
+    if (pageYOffset < 800) {
+      current = "home"
     }
-  })
-  if (pageYOffset < 800) {
-    current = "home"
-  }
 
-  navLi.forEach((li) => {
-    li.classList.remove("lg:text-vermelho-claro")
-    li.classList.remove("text-white")
-    li.classList.remove("bg-vermelho-claro")
-    li.classList.add("lg:text-cinza-escuro")
-    li.classList.add("lg:bg-transparent")
-    li.classList.add("text-cinza-escuro")
-    if (li.classList.contains(current)) {
-      li.classList.remove("text-cinza-escuro")
-      li.classList.remove("lg:text-cinza-escuro")
-      li.classList.add("bg-vermelho-claro")
-      li.classList.add("text-white")
-      li.classList.add("lg:text-vermelho-claro")
-    }
-  })
-})
+    navLi.forEach((li) => {
+      li.classList.remove("lg:text-vermelho-claro")
+      li.classList.remove("text-white")
+      li.classList.remove("bg-vermelho-claro")
+      li.classList.add("lg:text-cinza-escuro")
+      li.classList.add("lg:bg-transparent")
+      li.classList.add("text-cinza-escuro")
+      if (li.classList.contains(current)) {
+        li.classList.remove("text-cinza-escuro")
+        li.classList.remove("lg:text-cinza-escuro")
+        li.classList.add("bg-vermelho-claro")
+        li.classList.add("text-white")
+        li.classList.add("lg:text-vermelho-claro")
+      }
+    })
+  },
+  { passive: true }
+)

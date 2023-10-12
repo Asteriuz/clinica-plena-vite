@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         cinza: {
+          // #827d80
           claro: "#827d80",
+          claroFooter: "#5E575C",
           escuro: "#333333",
         },
         vermelho: {
