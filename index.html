@@ -12,9 +12,9 @@
     <link rel="icon" type="image/x-icon" href="./src/assets/img/logo/logo-white-circle.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="stylesheet" href="./src/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
   </head>
 
   <body class="min-h-screen w-screen overflow-x-hidden text-left font-inter text-2xl text-cinza-escuro">
@@ -50,6 +50,7 @@
           </a>
           <div class="flex items-center lg:order-2">
             <a
+              aria-label="Botão para falar conosco pelo WhatsApp"
               href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
               target="_blank"
               class="mr-3 flex gap-2 rounded-full bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl lg:mr-0"
@@ -188,6 +189,7 @@
               </div>
               <h2 class="mb-14 mt-2 text-lg md:text-xl">Sua saúde é nossa maior prioridade</h2>
               <a
+                aria-label="Botão para falar conosco pelo WhatsApp"
                 href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
                 target="_blank"
                 class="mr-3 flex items-center gap-2 rounded-full px-5 py-4 text-center text-lg text-white shadow-md outline duration-700 ease-in-out md:mr-0"
@@ -310,10 +312,10 @@
           </div>
         </div>
         <div class="absolute bottom-5 left-1/2 z-40 flex -translate-x-1/2 space-x-4">
-          <button type="button" class="h-4 w-4 sm:h-3 sm:w-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="h-4 w-4 sm:h-3 sm:w-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="h-4 w-4 sm:h-3 sm:w-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="h-4 w-4 sm:h-3 sm:w-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
         </div>
         <button
           type="button"
@@ -344,8 +346,8 @@
         <p class="absolute left-0 top-28 z-20 rounded-br-2xl bg-black/50 p-2 text-base text-white md:top-32">Imagens Meramente Ilustrativas</p>
       </div>
       <section id="servicos-wrapper" class="my-16 flex w-screen scroll-m-6 flex-col items-center justify-center gap-4">
-        <h3 class="obs-hidden text-2xl font-semibold tracking-widest text-vermelho-claro">Para Você</h3>
-        <h2 class="obs-hidden text-center text-4xl tracking-widest">Nossos Serviços</h2>
+        <h2 class="obs-hidden text-2xl font-semibold tracking-widest text-vermelho-claro">Para Você</h2>
+        <h3 class="obs-hidden text-center text-4xl tracking-widest">Nossos Serviços</h3>
         <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
         <div id="card-servicos" class="mx-2 flex flex-wrap justify-center gap-y-8 md:gap-x-4 lg:gap-x-10">
           <div class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
@@ -588,8 +590,8 @@
         </div>
       </section>
       <section id="medicos-wrapper" class="flex w-full scroll-m-6 flex-col items-center gap-4">
-        <h3 class="obs-hidden font-semibold tracking-widest text-vermelho-claro">Tudo em família</h3>
-        <h2 class="obs-hidden text-center text-4xl tracking-widest">Nossos Médicos</h2>
+        <h2 class="obs-hidden font-semibold tracking-widest text-vermelho-claro">Tudo em família</h2>
+        <h3 class="obs-hidden text-center text-4xl tracking-widest">Nossos Médicos</h3>
         <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
         <div id="cards-medicos" class="my-12 flex w-full flex-wrap justify-center gap-x-10 gap-y-20 px-4 lg:gap-x-20">
           <div id="angelica-card" class="obs-hidden relative flex w-[484px] flex-col rounded-2xl bg-white bg-clip-border text-gray-700 shadow-md md:w-[584px]">
