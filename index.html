@@ -15,11 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/index.css" />
     <link rel="stylesheet" href="./src/styles/animation.css" />
-    <script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script defer type="module" src="./src/js/nav.js"></script>
-    <script defer type="module" src="./src/js/hero.js"></script>
-    <script defer type="module" src="./src/js/scroll.js"></script>
-    <script defer type="module" src="./src/js/testimony.js"></script>
   </head>
 
   <body class="min-h-screen w-screen overflow-x-hidden text-left font-inter text-2xl text-cinza-escuro">
@@ -57,7 +52,7 @@
             <a
               href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
               target="_blank"
-              class="mr-3 flex gap-2 rounded-lg bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl lg:mr-0"
+              class="mr-3 flex gap-2 rounded-full bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl lg:mr-0"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
                 <path
@@ -132,7 +127,7 @@
                 </button>
                 <!-- Dropdown menu -->
                 <div id="dropdownNavbar" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow">
-                  <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                  <ul class="py-2 text-sm text-gray-700" aria-label="dropdownLargeButton">
                     <li class="group">
                       <a href="https://www.instagram.com/ginecologiasemfrescura/" target="_blank" class="flex gap-x-2 px-4 py-2 text-xl hover:bg-gray-100">
                         <svg
@@ -149,8 +144,8 @@
                             d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
                           />
                         </svg>
-                        <p class="inline duration-300 ease-in-out group-hover:text-pink-600">Instagram</p></a
-                      >
+                        <p class="inline duration-300 ease-in-out group-hover:text-pink-600">Instagram</p>
+                      </a>
                     </li>
                     <li class="group">
                       <a
@@ -164,8 +159,8 @@
                             fill-rule="evenodd"
                           />
                         </svg>
-                        <p class="inline duration-300 ease-in-out group-hover:text-blue-600">Facebook</p></a
-                      >
+                        <p class="inline duration-300 ease-in-out group-hover:text-blue-600">Facebook</p>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -235,7 +230,7 @@
                 <p class="flex items-center gap-2 text-base">Saiba Mais</p>
               </a>
             </div>
-            <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+            <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
               <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
                 <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
               </svg>
@@ -271,7 +266,7 @@
                 </p>
               </a>
             </div>
-            <div href="" class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
+            <div class="scroll-down-arrow-hero absolute bottom-28 cursor-pointer sm:bottom-16">
               <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
                 <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
               </svg>
@@ -346,17 +341,18 @@
             <span class="sr-only">Next</span>
           </span>
         </button>
+        <p class="absolute left-0 top-28 z-20 rounded-br-2xl bg-black/50 p-2 text-base text-white md:top-32">Imagens Meramente Ilustrativas</p>
       </div>
       <section id="servicos-wrapper" class="my-16 flex w-screen scroll-m-6 flex-col items-center justify-center gap-4">
         <h3 class="obs-hidden text-2xl font-semibold tracking-widest text-vermelho-claro">Para Você</h3>
-        <h2 class="obs-hidden text-4xl tracking-widest">Nossos Serviços</h2>
+        <h2 class="obs-hidden text-center text-4xl tracking-widest">Nossos Serviços</h2>
         <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
         <div id="card-servicos" class="mx-2 flex flex-wrap justify-center gap-y-8 md:gap-x-4 lg:gap-x-10">
           <div class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
             <div class="min-h-[256px] overflow-hidden rounded-t-lg">
               <img
                 class="min-h-[256px] rounded-t-lg duration-500 ease-in-out hover:scale-110"
-                src="./src/assets/img/service-cards/ginecologia.jpg"
+                src="./src/assets/img/service-cards/ginecologia.webp"
                 alt="Útero formado por flores"
               />
             </div>
@@ -388,7 +384,7 @@
                   <p class="text-lg text-cinza-claro">Terapia de Reposição Hormonal</p>
                 </li>
                 <li class="flex items-center gap-x-2">
-                  <hr class="my-4 h-1 w-3 rounded border-0 bg-vermelho-claro" />
+                  <hr class="my-4 h-1 min-w-[12px] rounded border-0 bg-vermelho-claro" />
                   <p class="text-lg text-cinza-claro">Tratamento de infeções causadas por HPV e corrimentos vaginais</p>
                 </li>
               </ul>
@@ -434,7 +430,11 @@
           </div>
           <div style="--delay: 8" class="obs-hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-xl">
             <div class="overflow-hidden rounded-t-lg">
-              <img class="rounded-t-lg duration-500 ease-in-out hover:scale-110" src="./src/assets/img/service-cards/procedimento.jpg" alt="Procedimento Card" />
+              <img
+                class="rounded-t-lg duration-500 ease-in-out hover:scale-110"
+                src="./src/assets/img/service-cards/procedimento.webp"
+                alt="Procedimento Card"
+              />
             </div>
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-wider text-cinza-escuro">Procedimentos</h5>
@@ -575,31 +575,28 @@
               </div>
               <div class="w-48">
                 <a href="https://maps.app.goo.gl/Ddn8kXW6kGEqfARL8" target="_blank"
-                  ><img src="./src/assets/img/testimony/maps-logo.png" class="w-48" alt="Logo do Google Maps"
+                  ><img src="./src/assets/img/testimony/maps-logo.webp" class="w-48" alt="Logo do Google Maps"
                 /></a>
               </div>
             </div>
           </div>
           <img
             class="obs-hidden mb-6 rounded-3xl px-4 md:-mt-6 md:px-16 xl:max-w-[640px] xl:px-2"
-            src="./src/assets/img/testimony/happyperson.jpg"
+            src="./src/assets/img/testimony/happyperson.webp"
             alt="Pessoa feliz em uma clinica"
           />
         </div>
       </section>
       <section id="medicos-wrapper" class="flex w-full scroll-m-6 flex-col items-center gap-4">
         <h3 class="obs-hidden font-semibold tracking-widest text-vermelho-claro">Tudo em família</h3>
-        <h2 class="obs-hidden text-4xl tracking-widest">Nossos Médicos</h2>
+        <h2 class="obs-hidden text-center text-4xl tracking-widest">Nossos Médicos</h2>
         <hr class="obs-hidden mx-auto my-4 h-1 w-32 rounded border-0 bg-vermelho-claro" />
-        <div id="cards-medicos" class="my-12 flex w-full flex-wrap justify-center gap-x-10 gap-y-20 px-12 lg:gap-x-20">
-          <div
-            id="angelica-card"
-            class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
-          >
+        <div id="cards-medicos" class="my-12 flex w-full flex-wrap justify-center gap-x-10 gap-y-20 px-4 lg:gap-x-20">
+          <div id="angelica-card" class="obs-hidden relative flex w-[484px] flex-col rounded-2xl bg-white bg-clip-border text-gray-700 shadow-md md:w-[584px]">
             <div
-              class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]"
+              class="shine shadow-blue-gray-500/40 w-fulloverflow-hidden relative mx-4 mt-5 h-96 rounded-xl bg-clip-border text-white shadow-lg md:h-[480px]"
             >
-              <img src="./src/assets/img/medicos/angelica.jpg" class="object-contain" alt="Foto da Dra Angelica" />
+              <img src="./src/assets/img/medicos/angelica.webp" class="object-contain" alt="Foto da Dra Angelica" />
             </div>
             <div class="mx-5 my-4 flex flex-col gap-2">
               <h5 class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">Dra. Angélica Sales Barcelos</h5>
@@ -643,34 +640,47 @@
                 </li>
               </ul>
               <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
-              <p class="self-center tracking-wider">CRM: 82185</p>
+              <p class="self-center font-bold tracking-wider">CRM: 82185</p>
             </div>
           </div>
+
           <div
             id="orlando-card"
             style="--delay: 4"
-            class="obs-hidden relative flex min-w-[384px] max-w-[30%] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            class="relative flex w-[484px] flex-col rounded-2xl bg-white bg-clip-border text-gray-700 shadow-md md:w-[584px]"
           >
             <div
-              class="shine shadow-blue-gray-500/40 relative mx-4 -mt-6 h-96 min-w-[320px] overflow-hidden rounded-xl bg-clip-border text-white shadow-lg 2xl:h-[480px]"
+              class="shine shadow-blue-gray-500/40 w-fulloverflow-hidden relative mx-4 mt-5 rounded-xl bg-clip-border text-white shadow-lg sm:h-96 md:h-[480px]"
             >
-              <img src="./src/assets/img/medicos/orlando.jpg" class="object-contain" alt="Foto do Dr. Orlando" />
+              <img src="./src/assets/img/medicos/orlando-light.webp" class="object-center" alt="Foto do Dr. Orlando" />
             </div>
             <div class="mx-5 my-4 flex grow flex-col gap-2">
               <h5 class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">Dr. Orlando da Costa Barros</h5>
-              <h4 class="mb-3 text-[27px] tracking-wide text-vermelho-claro">Cirurgião Vascular</h4>
+              <h4 class="mb-3 text-[27px] tracking-wide text-vermelho-claro">Angiologia & Cirurgia Vascular</h4>
               <ul class="flex grow flex-col gap-y-2 text-lg text-cinza-claro">
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
                   </svg>
-                  Especialista em Angiologia e cirurgia vascular pela SBACV
+                  Especialista em Angiologia e Cirurgia Vascular pela SBACV
                 </li>
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
                   </svg>
-                  Área de atuação em ecografia vascular
+                  Coordenador do serviço de Cirurgia Vascular do Hospital Ermelino Matarazzo
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Área de atuação em Ecografia Vascular (CBR)
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M416 128L192 384l-96-96" />
+                  </svg>
+                  Coordenador do serviço de Ecografia Vascular do Hospital Santa Marcelina
                 </li>
                 <li>
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline w-6 text-vermelho-claro" viewBox="0 0 512 512">
@@ -680,7 +690,7 @@
                 </li>
               </ul>
               <hr class="mx-auto my-4 h-1 w-40 rounded border-0 bg-vermelho-claro" />
-              <p class="self-center tracking-wider">CRM: 78706</p>
+              <p class="self-center font-bold tracking-wider">CRM: 78706</p>
             </div>
           </div>
         </div>
@@ -958,5 +968,10 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="./src/js/nav.js"></script>
+    <script type="module" src="./src/js/hero.js"></script>
+    <script type="module" src="./src/js/scroll.js"></script>
+    <script type="module" src="./src/js/testimony.js"></script>
   </body>
 </html>

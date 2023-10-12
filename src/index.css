@@ -7,19 +7,19 @@
 }
 
 #hero {
-  background-image: url(./assets/img/hero/clinic.jpg);
+  background-image: url(./assets/img/hero/clinic.webp);
 }
 
 #hero2 {
-  background-image: url(./assets/img/hero/clinic2.jpg);
+  background-image: url(./assets/img/hero/clinic2.webp);
 }
 
 #hero3 {
-  background-image: url(./assets/img/hero/clinic3.jpg);
+  background-image: url(./assets/img/hero/clinic3.webp);
 }
 
 #hero4 {
-  background-image: url(./assets/img/hero/clinic4.jpg);
+  background-image: url(./assets/img/hero/clinic4.webp);
 }
 
 /* when height is less than 700 px */
