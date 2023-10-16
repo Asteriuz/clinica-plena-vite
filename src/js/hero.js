@@ -1,6 +1,8 @@
 const prevButton = document.getElementById("default-carousel-prev")
 const nextButton = document.getElementById("default-carousel-next")
 const heroContainer = document.getElementById("hero-container")
+const dropdown = document.getElementById("dropdownNavbar")
+const slideIndicator = document.getElementsByClassName("slide-indicator")
 
 let canSlide = true
 let slideInterval
@@ -8,7 +10,12 @@ let slideInterval
 function resetSlideInterval() {
   clearInterval(slideInterval)
   slideInterval = setInterval(() => {
-    if (canSlide) {
+    if (
+      canSlide &&
+      heroContainer.getBoundingClientRect().top < window.innerHeight &&
+      heroContainer.getBoundingClientRect().bottom > 0 &&
+      !dropdown.classList.contains("block")
+    ) {
       nextButton.click()
     }
   }, 4000) // Adjust the interval as needed (e.g., 5000ms for a 5-second interval)
@@ -36,6 +43,11 @@ prevButton.addEventListener("click", resetSlideInterval)
 nextButton.addEventListener("click", resetSlideInterval)
 
 resetSlideInterval()
+
+// if click on slide indicator reset slide interval
+for (let i = 0; i < slideIndicator.length; i++) {
+  slideIndicator[i].addEventListener("click", resetSlideInterval)
+}
 
 // Scroll down arrow
 var arrowElement = document.querySelectorAll(".scroll-down-arrow-hero")
