@@ -16,6 +16,9 @@ export default {
           hover: "#c42a2e",
         },
       },
+      screens: {
+        xs: "375px",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
@@ -24,6 +27,5 @@ export default {
       // }
     },
   },
-  plugins: [require('flowbite/plugin')],
-};
-
+  plugins: [require("flowbite/plugin")],
+}

@@ -7,23 +7,23 @@
 }
 
 #hero {
-  background-image: url(./assets/img/hero/clinic.webp);
+  background-image: url(./assets/img/hero-plena/clinic.webp);
 }
 
 #hero2 {
-  background-image: url(./assets/img/hero/clinic2.webp);
+  background-image: url(./assets/img/hero-plena/clinic2.webp);
 }
 
 #hero3 {
-  background-image: url(./assets/img/hero/clinic3.webp);
+  background-image: url(./assets/img/hero-plena/clinic3.webp);
 }
 
-#hero4 {
-  background-image: url(./assets/img/hero/clinic4.webp);
+#hero4 { 
+  background-image: url(./assets/img/hero-plena/clinic4.webp);
 }
 
 /* when height is less than 700 px */
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .scroll-down-arrow-hero {
     display: none;
   }
