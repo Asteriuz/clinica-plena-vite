@@ -7,19 +7,19 @@
 }
 
 #hero {
-  background-image: url(./assets/img/hero-plena/clinic.webp);
+  background-image: url(./assets/img/hero-plena/clinica-enhanced-1.webp);
 }
 
 #hero2 {
-  background-image: url(./assets/img/hero-plena/clinic2.webp);
+  background-image: url(./assets/img/hero-plena/clinica-enhanced-2.webp);
 }
 
 #hero3 {
-  background-image: url(./assets/img/hero-plena/clinic3.webp);
+  background-image: url(./assets/img/hero-plena/clinica-enhanced-3.webp);
 }
 
-#hero4 { 
-  background-image: url(./assets/img/hero-plena/clinic4.webp);
+#hero4 {
+  background-image: url(./assets/img/hero-plena/clinica-enhanced-4.webp);
 }
 
 /* when height is less than 700 px */
