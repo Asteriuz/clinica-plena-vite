@@ -1,6 +1,13 @@
 .animate-character {
   text-transform: uppercase;
-  background-image: linear-gradient(-225deg, #ff5137 0%, #ff3737 29%, #e93338 67%, #e93338 100%);
+  background-image: linear-gradient(
+    -225deg,
+    rgba(240, 30, 92, 1) 0%,
+    rgba(244, 49, 74, 1) 30%,
+    rgb(250, 84, 19) 56%,
+    #e93338 75%,
+    rgb(255, 0, 0) 100%
+  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -8,11 +15,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
+  animation: wavegradient 2.5s linear infinite;
   display: inline-block;
 }
 
-@keyframes textclip {
+@keyframes wavegradient {
   to {
     background-position: -200% center;
   }
@@ -22,6 +29,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .shine::before {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   content: "";
@@ -34,16 +42,19 @@
   width: 50%;
   z-index: 2;
 }
+
 .shine:hover::before,
 .shine:focus::before {
   -webkit-animation: shine 0.85s;
   animation: shine 0.85s;
 }
+
 @-webkit-keyframes shine {
   100% {
     left: 125%;
   }
 }
+
 @keyframes shine {
   100% {
     left: 125%;
