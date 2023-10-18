@@ -32,7 +32,7 @@ const items = [
 
 const options = {
   defaultPosition: 0,
-  interval: 6000,
+  interval: 5500,
 
   indicators: {
     activeClasses: "bg-vermelho-claro",
