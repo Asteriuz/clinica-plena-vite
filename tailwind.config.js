@@ -22,6 +22,12 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      backgroundImage: {
+        "hero-1": "url('./assets/img/hero-plena/clinica-enhanced-1.webp')",
+        "hero-2": "url('./assets/img/hero-plena/clinica-enhanced-2.webp')",
+        "hero-3": "url('./assets/img/hero-plena/clinica-enhanced-3.webp')",
+        "hero-4": "url('./assets/img/hero-plena/clinica-enhanced-4.webp')",
+      },
       // gridTemplateColumns: {
       //   "16": "2fr 2fr 2fr 1fr",
       // }

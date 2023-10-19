@@ -120,15 +120,15 @@
               aria-label="Fale Conosco"
               href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
               target="_blank"
-              class="mr-3 flex gap-2 rounded-full bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl sm:px-4 sm:py-3 lg:mr-0"
+              class="mr-3 flex items-center gap-2 rounded-full bg-vermelho-claro p-4 text-center font-medium text-white shadow-md duration-300 ease-in-out hover:-translate-y-2 hover:bg-vermelho-hover hover:shadow-xl sm:px-4 sm:py-3 lg:mr-0"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-10 fill-white" viewBox="0 0 512 512">
                 <path
                   d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
                   fill-rule="evenodd"
                 />
               </svg>
-              <p class="hidden lg:block">Fale conosco</p>
+              <p class="hidden xs:block xs:text-lg lg:block lg:text-2xl">Fale conosco</p>
             </a>
             <button
               id="navbar-toggle"
@@ -139,10 +139,10 @@
               aria-expanded="false"
             >
               <span class="sr-only">Abrir o menu</span>
-              <svg id="hamburger-open" class="w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <svg id="hamburger-open" class="w-16 p-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path id="hamburger" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
-              <svg id="hamburger-close" class="hidden w-16 p-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <svg id="hamburger-close" class="hidden w-16 px-3 py-[9px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
               </svg>
             </button>
@@ -242,7 +242,8 @@
       <div id="hero-container" class="relative w-full">
         <div class="relative h-[calc(100dvh)] max-h-screen overflow-hidden">
           <div id="carousel-item-1" class="hidden duration-1000 ease-in-out">
-            <div id="hero" class="flex h-screen w-screen flex-col items-center justify-center bg-black/30 bg-cover bg-center bg-blend-darken">
+            <div id="hero" class="kenburns relative flex h-screen w-screen flex-col items-center justify-center">
+              <div class="img-holder kenburns bg-hero-1 absolute h-full w-screen bg-black/30 bg-cover bg-center bg-blend-darken"></div>
               <div
                 class="mt-20 flex flex-col items-center gap-3 text-center text-4xl leading-tight tracking-wide text-white drop-shadow-2xl xs:text-5xl md:gap-5 md:text-7xl"
               >
@@ -257,30 +258,29 @@
                 </div>
                 <h2 class="text-shadow mb-14 mt-2 text-base tracking-normal xs:text-lg md:text-xl">Sua saúde é nossa maior prioridade</h2>
                 <a
-                  href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                  href="#servicos-wrapper"
                   target="_blank"
                   class="mr-3 flex items-center gap-2 rounded-full bg-cinza-escuro/40 px-6 py-4 text-center text-lg text-white shadow-md outline duration-500 ease-in-out hover:bg-vermelho-claro md:mr-0"
                 >
-                  <p class="flex items-center gap-2 xs:text-base">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-                      <path
-                        d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                    Saiba Mais
-                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8" viewBox="0 0 512 512">
+                    <rect x="32" y="112" width="448" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                    <path
+                      d="M144 112V80a32 32 0 0132-32h160a32 32 0 0132 32v32M256 208v160M336 288H176"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                  </svg>
+                  <p class="flex items-center gap-2 xs:text-base">Saiba Mais</p>
                 </a>
-              </div>
-              <div class="scroll-down-arrow-hero absolute bottom-14 cursor-pointer sm:bottom-16">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative w-16 animate-bounce text-white sm:bottom-0.5" viewBox="0 0 512 512">
-                  <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
-                </svg>
               </div>
             </div>
           </div>
           <div id="carousel-item-2" class="hidden duration-1000 ease-in-out">
-            <div id="hero2" class="flex h-screen w-screen flex-col items-center justify-center bg-black/30 bg-cover bg-center bg-blend-darken">
+            <div id="hero2" class="flex h-screen w-screen flex-col items-center justify-center">
+              <div class="img-holder kenburns bg-hero-2 absolute h-full w-screen bg-black/30 bg-cover bg-center bg-blend-darken"></div>
               <div
                 class="mt-20 flex flex-col items-center gap-3 text-center text-4xl leading-tight tracking-wide text-white drop-shadow-2xl xs:text-5xl md:gap-5 md:text-7xl"
               >
@@ -298,18 +298,14 @@
                   target="_blank"
                   class="mr-3 flex items-center gap-2 rounded-full bg-cinza-escuro/40 px-6 py-4 text-center text-lg text-white shadow-md outline duration-500 ease-in-out hover:bg-vermelho-claro md:mr-0"
                 >
-                  <p class="flex items-center gap-2 xs:text-base">Saiba Mais</p>
+                  <p class="flex items-center gap-2 xs:text-base">Quem Somos</p>
                 </a>
-              </div>
-              <div class="scroll-down-arrow-hero absolute bottom-14 cursor-pointer sm:bottom-16">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
-                  <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
-                </svg>
               </div>
             </div>
           </div>
           <div id="carousel-item-3" class="hidden duration-1000 ease-in-out">
-            <div id="hero3" class="flex h-screen w-screen flex-col items-center justify-center bg-black/30 bg-cover bg-center bg-blend-darken">
+            <div id="hero3" class="flex h-screen w-screen flex-col items-center justify-center">
+              <div class="img-holder kenburns bg-hero-3 absolute h-full w-screen bg-black/30 bg-cover bg-center bg-blend-darken"></div>
               <div
                 class="mt-20 flex flex-col items-center gap-3 text-center text-4xl leading-tight tracking-wide text-white drop-shadow-2xl xs:text-[46px] md:gap-5 md:text-7xl"
               >
@@ -324,30 +320,18 @@
                 </div>
                 <h3 class="text-shadow mb-14 mt-2 text-base tracking-normal xs:text-lg md:text-xl">Cuidando de você por completo</h3>
                 <a
-                  href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                  href="#plena-map"
                   target="_blank"
                   class="mr-3 flex items-center gap-2 rounded-full bg-cinza-escuro/40 px-6 py-4 text-center text-lg text-white shadow-md outline duration-500 ease-in-out hover:bg-vermelho-claro md:mr-0"
                 >
-                  <p class="flex items-center gap-2 xs:text-base">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-8 fill-white" viewBox="0 0 512 512">
-                      <path
-                        d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                    Saiba Mais
-                  </p>
+                  <p class="flex items-center gap-2 xs:text-base">Veja as Fotos</p>
                 </a>
-              </div>
-              <div class="scroll-down-arrow-hero absolute bottom-14 cursor-pointer sm:bottom-16">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
-                  <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
-                </svg>
               </div>
             </div>
           </div>
           <div id="carousel-item-4" class="hidden duration-1000 ease-in-out">
-            <div id="hero4" class="flex h-screen w-screen flex-col items-center justify-center bg-black/30 bg-cover bg-center bg-blend-darken">
+            <div id="hero4" class="flex h-screen w-screen flex-col items-center justify-center">
+              <div class="img-holder kenburns bg-hero-4 absolute h-full w-screen bg-black/30 bg-cover bg-center bg-blend-darken"></div>
               <div
                 class="mt-20 flex flex-col items-center gap-3 text-center text-4xl leading-tight tracking-wide text-white drop-shadow-2xl xs:text-5xl md:gap-5 md:text-7xl"
               >
@@ -377,11 +361,6 @@
                   </p>
                 </a>
               </div>
-              <div class="scroll-down-arrow-hero absolute bottom-14 cursor-pointer sm:bottom-16">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
-                  <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
-                </svg>
-              </div>
             </div>
           </div>
         </div>
@@ -390,6 +369,11 @@
           <button id="carousel-indicator-2" type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 2"></button>
           <button id="carousel-indicator-3" type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 3"></button>
           <button id="carousel-indicator-4" type="button" class="h-4 w-4 rounded-full sm:h-3 sm:w-3" aria-current="false" aria-label="Slide 4"></button>
+        </div>
+        <div class="scroll-down-arrow-hero absolute z-40 bottom-14 text-center left-1/2 -translate-x-1/2 mx-auto cursor-pointer sm:bottom-16">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon relative bottom-0.5 w-16 animate-bounce text-white" viewBox="0 0 512 512">
+            <path class="fill-none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" />
+          </svg>
         </div>
         <button
           type="button"
@@ -741,7 +725,7 @@
             <div
               class="shine shadow-blue-gray-500/40 w-fulloverflow-hidden relative mx-4 mt-5 rounded-xl bg-clip-border text-white shadow-lg sm:h-96 md:h-[480px]"
             >
-              <img src="./src/assets/img/medicos/orlando-enhanced.jpg" class="object-center" alt="Foto do Dr. Orlando" />
+              <img src="./src/assets/img/medicos/orlando-enhanced.webp" class="object-center" alt="Foto do Dr. Orlando" />
             </div>
             <div class="mx-5 my-4 flex grow flex-col gap-2">
               <h5 class="text-blue-gray-900 block font-sans text-3xl font-semibold leading-snug tracking-normal antialiased">Dr. Orlando da Costa Barros</h5>

@@ -24,6 +24,9 @@ function toggleNavbar() {
   }
 }
 
+const menuBtn = document.getElementById("navbar-toggle")
+menuBtn.addEventListener("click", toggleNavbar)
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -34,7 +37,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-const menuBtn = document.querySelector("#navbar-toggle")
 document.addEventListener("click", function (e) {
   if (!e.isTrusted) return
   if (
@@ -79,11 +81,11 @@ window.addEventListener(
     sections.forEach((section) => {
       const sectionTop = section.offsetTop
       const sectionHeight = section.clientHeight
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      if (scrollY >= sectionTop - sectionHeight / 3) {
         current = section.getAttribute("id")
       }
     })
-    if (pageYOffset < 800) {
+    if (scrollY < 800) {
       current = "home"
     }
 
