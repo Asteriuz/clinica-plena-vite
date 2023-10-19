@@ -22,8 +22,26 @@
   background-image: url(./assets/img/hero-plena/clinica-enhanced-4.webp);
 }
 
+/* change background position in mobiles */
+@media (max-width: 768px) {
+  #hero {
+    background-position: 50% 0;
+  }
+  #hero2 {
+    background-position: 70% 0;
+  }
+  #hero3 {
+    background-position: 20% 0;
+  }
+  #hero4 {
+    background-position: 10% 0;
+    /* zoom out */
+    background-size: cover;
+  }
+}
+
 /* when height is less than 700 px */
-@media (max-height: 750px) {
+@media (max-height: 720px) {
   .scroll-down-arrow-hero {
     display: none;
   }
