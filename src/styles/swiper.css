@@ -51,3 +51,23 @@
 .swiper-button-prev:hover:after {
   color: #fff !important;
 }
+
+.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  /* put a black over the image tag inside */
+  background-color: #000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-thumbs .swiper-slide>img {
+  opacity: 0.5;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active>img {
+  opacity: 1;
+}
