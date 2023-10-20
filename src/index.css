@@ -6,6 +6,10 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.nav-link {
+  @apply tracking-wider md:tracking-normal xl:tracking-wide;
+}
+
 /* change background position in mobiles */
 @media (max-width: 768px) {
   #hero > .img-holder {
