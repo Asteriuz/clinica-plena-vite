@@ -27,9 +27,14 @@ const testimonyList = {
     img: "img/testimony/person3.png",
   },
   3: {
+    name: "Gabriella Sousa",
+    testimony: "Muito bem localizado (ao lado da estação), a clínica é muito acolhedora e encantadora. A Dra. Angélica é uma médica extremamente profissional e uma pessoa incrível!! Fui muito bem atendida desde a minha chegada à clínica. A consulta foi super confortável e tranquila. <3",
+    img: "img/testimony/amor.png",
+  },
+  4: {
     name: "Rosa Maria (Local Guide)",
     testimony: "Educada, delicada e bem humorada😍 ...",
-    img: "img/testimony/person4.png",
+    img: "img/testimony/person5.png",
   },
 }
 
