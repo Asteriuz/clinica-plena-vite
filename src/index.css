@@ -6,11 +6,18 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-v13-latin-regular.woff2") format("woff2");
+}
+
 .nav-link {
   @apply tracking-wider md:tracking-normal xl:tracking-wide;
 }
 
-/* change background position in mobiles */
 @media (max-width: 768px) {
   #hero > .img-holder {
     background-position: 50% 0;
@@ -23,12 +30,11 @@
   }
   #hero4 > .img-holder {
     background-position: 20% 0;
-    /* zoom out */
+
     background-size: cover;
   }
 }
 
-/* when height is less than 700 px */
 @media (max-height: 720px) {
   .scroll-down-arrow-hero {
     display: none;
